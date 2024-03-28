@@ -1,0 +1,18 @@
+.admission-master {
+    padding: 1rem;
+    border: 1px solid #c0c0c0;
+ }
+ 
+ .status {
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .available {
+    color: green;
+ }
+ 
+ .occupied {
+    color: red;
+ }
+ 

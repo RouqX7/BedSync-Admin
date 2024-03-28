@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    background-color: #e0e0e0;
+ }
+ 
+ .tab {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+ }
+
+ .nav-button {
+   margin-right: 10px;
+ }
+ 
+ .tab.active {
+    background-color: #c0c0c0;
+ }
+ 

@@ -1,0 +1,18 @@
+.bed-list {
+    /* Add your styles for the bed list container here */
+}
+
+.bed {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.bed.available {
+    background-color: #dff0d8; /* A light green background for available beds */
+}
+
+.bed.occupied {
+    background-color: #f2dede; /* A light red background for occupied beds */
+}

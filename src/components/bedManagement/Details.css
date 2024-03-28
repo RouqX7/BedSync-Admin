@@ -1,0 +1,17 @@
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+ }
+ 
+ .patient-details, .bed-details {
+    flex: 1;
+    padding: 1rem;
+    margin-right: 1rem; /* for spacing */
+    border: 1px solid #c0c0c0;
+ }
+ 
+ .input-group {
+    margin-bottom: 1rem;
+ }
+ 
