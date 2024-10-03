@@ -3,7 +3,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Link, useNavigate } from "react-router-dom";
 import { PatientColumns } from "../../datatableResource"; // Importing patient columns
 import { collection, getDocs, deleteDoc, doc, onSnapshot } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import { useRecoilState } from "recoil";
 import { selectedHospitalState } from "../../../atoms/atoms";
 import "./datatable.scss";

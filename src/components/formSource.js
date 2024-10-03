@@ -39,7 +39,7 @@ export const userInputs = [
     id: "role",
     label: "Role",
     type: "select",
-    options: ["doctor", "nurse", "admin"], // Options for the select input
+    options: ["Doctor", "Nurse", "Admin"], // Options for the select input
   },
   
   {
@@ -105,7 +105,7 @@ export const bedInputs = [
   },
 
 ];
-// Generic Patient Inputs (Modify as needed)
+
 export const patientInputs = [
   {
     id: "firstName",
@@ -129,6 +129,12 @@ export const patientInputs = [
     label: "Contact Information",
     type: "text",
     placeholder: "Contact details",
+  },
+  {
+    id: "gender",
+    label: "Gender",
+    type: "select",
+    options: ["Male", "Female", ], // Options for the select input
   },
   {
     id: "medicalHistory",

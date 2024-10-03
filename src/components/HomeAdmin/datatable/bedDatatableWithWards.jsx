@@ -3,13 +3,12 @@ import { DataGrid } from "@mui/x-data-grid";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { db } from "../../firebase";
-import { bedColumns } from "../../datatableResource";
+import { db } from "../../../firebase";
 import { collection, getDocs, onSnapshot } from "firebase/firestore";
-import { mapWardIdToName } from "../../firebase";
 import "./datatable.scss";
 import { selectedHospitalState } from "../../../atoms/atoms";
 import { useRecoilState } from "recoil";
+import { bedColumns } from "../../datatableResource";
 
 const BedDatatableWithWards = () => {
   const [data, setData] = useState([]);

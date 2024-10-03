@@ -1,8 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
-import { auth } from "../../firebase";
+import { auth } from "../../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { collection, getDocs, setDoc, doc } from "firebase/firestore";
-import { db, storage } from "../../firebase";
+import { db,storage } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useRecoilState } from "recoil";

@@ -10,7 +10,7 @@ import {
   doc,
   onSnapshot,
 } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import { useRecoilState } from "recoil"; // Assuming you have Recoil set up for state management
 import { selectedHospitalState } from "../../../atoms/atoms";
 

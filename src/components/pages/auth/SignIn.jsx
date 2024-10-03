@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { auth } from "../../firebase";
+import { auth } from "../../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { getDoc, doc } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from "../../../firebase";
 import { useNavigate } from "react-router-dom";
 import {  useRecoilState } from "recoil";
 import { selectedHospitalState } from "../../../atoms/atoms";

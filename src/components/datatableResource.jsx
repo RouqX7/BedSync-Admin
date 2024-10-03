@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "./firebase";
+import { db } from "../firebase";
 
 const DatatableResource = () => {
   const [users, setUsers] = useState([]);
@@ -206,19 +206,12 @@ export const wardColumns = [
 ];
 
 export const bedColumns = [
-  { field: "id", headerName: "ID", width: 70 },
-
-  {
-    field: "wardId",
-
-    headerName: "Ward Name",
-
-    width: 150,
-
-    valueGetter: (params) => {
-      return mapWardIdToName(params.row.wardId);
-    },
+  { 
+    field: "id",
+    headerName: "ID",
+    width: 70 
   },
+
 
   {
     field: "available",
@@ -270,12 +263,17 @@ export const bedColumns = [
 ];
 
 export const PatientColumns = [
+  { 
+    field: "id",
+    headerName: "ID",
+    width: 300 
+  },
   {
     field: "firstName",
 
     headerName: "First Name",
 
-    width: 150,
+    width: 100,
   },
 
   {
@@ -283,15 +281,22 @@ export const PatientColumns = [
 
     headerName: "Last Name",
 
-    width: 150,
+    width: 100,
   },
 
   {
-    field: "dateOfBirth",
+    field: "age",
 
-    headerName: "Date of Birth",
+    headerName: "Age",
 
-    width: 150,
+    width: 100,
+  },
+  {
+    field: "gender",
+
+    headerName: "Gender",
+
+    width: 100,
   },
 
   {
@@ -302,33 +307,32 @@ export const PatientColumns = [
     width: 200,
   },
 
+
+
   {
     field: "medicalHistory",
 
     headerName: "Medical History",
 
-    width: 200,
+    width: 150,
   },
 
-  {
-    field: "admissionHistory",
-
-    headerName: "Admission History",
-
-    width: 200,
-  },
   {
     field: "hospitalId",
 
     headerName: " Hospital ID",
 
-    width: 200,
+    width: 300,
+  },
+  {
+    field:"admitted",
+    headerName:"Admitted?"
   },
 
   {
-    field: "timestamp",
+    field: "createdAt",
 
-    headerName: "Timestamp",
+    headerName: "Created At",
 
     width: 200,
   },

@@ -6,7 +6,7 @@ import Person2OutlinedIcon from "@mui/icons-material/Person2Outlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
-import { db } from "../firebase";
+import { db } from "../../firebase";
 import { collection, query, where, getDocs, getDoc } from "firebase/firestore";
 
 const Widgets = ({ type }) => {

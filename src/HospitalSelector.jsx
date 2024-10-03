@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
+import { db } from './firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
-import { db } from './components/firebase';
 const HospitalSelector = ({ selectedHospital, onHospitalChange }) => {
   const [hospitals, setHospitals] = useState([]);
 

@@ -7,7 +7,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from "../../firebase";
+import { db } from '../../../firebase';
 import { setCurrentBed } from '../../state/bedSlice';
 
 const BedNew = ({ inputs, title }) => {

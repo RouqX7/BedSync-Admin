@@ -10,7 +10,7 @@ import {
   serverTimestamp,
   setDoc,
 } from "firebase/firestore";
-import { auth, db, storage } from "../../firebase";
+import { auth, db, storage } from "../../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useNavigate } from "react-router-dom";
@@ -74,7 +74,7 @@ const New = ({ inputs, title }) => {
     
     // Convert role input to lowercase if it's the role field
     if (id === "role") {
-      setRole(value);
+      setRole(value.toLowerCase());
     }
     
     // If the input field is for security question, set it using setSecurityQuestion
@@ -101,7 +101,7 @@ const New = ({ inputs, title }) => {
         userId: authResult.user.uid,
         email: authResult.user.email,
         firstName: data.firstName,
-        lastName: data.lastname,
+        lastName: data.lastName,
         address: data.address,
         role: role, // Use role state directly
         phoneNumber: data.phoneNumber,

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { DataGrid } from "@mui/x-data-grid";
 import { Link } from "react-router-dom";
 import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
-import { db } from "../../firebase";
+import { db } from '../../../firebase';
 import { userColumns } from '../../datatableResource';
 import HospitalSelector from '../../../HospitalSelector';
 import { selectedHospitalState } from '../../../atoms/atoms';
@@ -75,7 +75,6 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        <HospitalSelector selectedHospital={selectedHospital} onHospitalChange={setSelectedHospital} />
         Add New User
         <Link to="/AdminUsers/new" className="link">
           Add New
